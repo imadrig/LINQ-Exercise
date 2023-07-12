@@ -26,6 +26,14 @@ namespace LINQ
         {
             gameTitles = gameTitles.OrderByDescending(x => x).ToList();
             return string.Join(", " , gameTitles) ;
+
+            //int numberOfGames = gameTitles.Count();
+            //return numberOfGames.ToString();
+
+            //gameTitles = gameTitles.Where(title => title.Contains("l")).ToList();
+            //return string.Join(", ", gameTitles);
+
+            
         }
     }
 }
