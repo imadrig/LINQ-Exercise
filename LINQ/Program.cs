@@ -24,7 +24,7 @@ namespace LINQ
 
         public static string VideoGameTitles(List<string> gameTitles) 
         {
-            gameTitles.OrderByDescending(x => x).ToList();
+            gameTitles = gameTitles.OrderByDescending(x => x).ToList();
             return string.Join(", " , gameTitles) ;
         }
     }
